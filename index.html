@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flip a Coin</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <h1>🪙 Heads or Tails</h1>
+        <div class="coin-container">
+            <div class="coin" id="coin">
+                <img src="heads.png" alt="Heads" class="side heads" />
+                <img src="tails.png" alt="Tails" class="side tails" />
+            </div>
+        </div>
+        <button id="flipBtn">Flip the Coin</button>
+        <h2 id="resultText"></h2>
+    </div>
+
+    <script>
+        function flipCoin() {
+            const coin = document.getElementById('coin');
+            const resultText = document.getElementById('resultText');
+
+            const result = Math.random() < 0.5 ? 'Heads' : 'Tails';
+
+            coin.classList.remove('animate', 'show-heads', 'show-tails');
+            void coin.offsetWidth; // trigger reflow
+
+            coin.classList.add('animate');
+            coin.classList.add(result === 'Heads' ? 'show-heads' : 'show-tails');
+
+            setTimeout(() => {
+                resultText.textContent = 'Result: ' + result;
+            }, 2000);
+        }
+
+        document.getElementById('flipBtn').addEventListener('click', flipCoin);
+    </script>
+</body>
+</html>
