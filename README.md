@@ -4,7 +4,7 @@ A simple and interactive web-based project to simulate flipping a coin. It rando
 
 ## 🔗 Live Demo
 
-[Click here to try it out](https://adarsh22144t.github.io/Flip-a-Coin-heads-or-Tails-/)
+[Click here to try it out](http://flipacoin-heads-or-tails.netlify.app)
 
 ## 📸 Screenshots
 
