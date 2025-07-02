@@ -8,7 +8,8 @@ A simple and interactive web-based project to simulate flipping a coin. It rando
 
 ## 📸 Screenshots
 
-![App Screenshot](screenshot.png) <!-- Replace with actual screenshot if you have one -->
+![App Screenshot](![Uploading image.png…]()
+) <!-- Replace with actual screenshot if you have one -->
 
 ## 🚀 Features
 
